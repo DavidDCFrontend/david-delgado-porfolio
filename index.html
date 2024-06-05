@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Delgado Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#home" class="header__logo">
+            David <span>Delgado</span>
+        </a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="header__navbar">
+            <a href="#home" class="header__navbar__link header__navbar__link--active">Inicio</a>
+            <a href="#about" class="header__navbar__link">Sobre mí</a>
+            <a href="#services" class="header__navbar__link">Formación</a>
+            <a href="#projects" class="header__navbar__link">Proyectos</a>
+            <a href="#skills" class="header__navbar__link">Skills</a>
+            <a href="#contact" class="header__navbar__link">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="home__content">
+            <h3 class="home__content__hi">Hola</h3>
+            <h1>Soy <span>David</span></h1>
+            <h3 class="home__content__text-animation">
+                Y soy <span></span>
+            </h3>
+            <p>Busco primer empleo como junior en el campo del desarrollo web y la programación. Actualmente estoy cursando el ciclo superior de Desarrollo de Aplicaciones Web (DAW), quedándome tan solo dos asignaturas para terminar</p>
+
+            <div class="home__content__social__icons">
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+            </div>
+
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home__content__img">
+            <img src="assets/fotodavid.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about__img">
+            <img src="assets/fotodavid3.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>mí</span></h2>
+            <h3 class="about-content__text-animation">
+                <span></span>
+            </h3>
+            <p>Hace unos 5 años, trabajando de dependiente en una empresa de artes gráficas y servicios de copistería, empecé a tener mucho interés por el diseño gráfico, la edición de imágenes y, en general, por el increíble mundo digital, tecnológico e informático y sus posibilidades a nivel profesional.</p>
+
+            <div id="moreContent" class="collapsed">
+                <p>Me gusta la informática y la tecnología desde pequeño, pero hasta esa experiencia laboral que me abrió los ojos, era más bien una inquietud personal y un entretenimiento que un campo en el que desarrollarme profesionalmente.</p>
+         
+                <p>Así que empecé a formarme como diseñador gráfico y aprendiendo de todo un poco, buscando una orientación profesional en algún perfil tecnológico, y entonces fue cuando vi la luz al "descubrir" el mundo del desarrollo web y la programación, que aunque desde muy joven me había interesado, nunca me lo había tomado tan en serio como para que se convirtiera en mi camino profesional.</p>
+
+                <p>Y entonces decidí seriamente formarme para llegar a ser un desarrollador y programador profesional. Empecé primero a estudiar de forma autodidacta, realizando cursos, practicando y empapándome de todo lo que podía, hasta que en el 2021 me matriculé en el ciclo superior de Desarrollo de Aplicaciones Web (DAW), con la determinación de tener una preparación más completa y una certificación que me ayudara a lograr mi objetivo.</p>
+
+                <p>Y ahora, llegado a este punto en el que me faltan tan sólo dos asignaturas para terminar, después de estos años de estudio de DAW en la modalidad semipresencial (para poder compatibilizar los estudios con el trabajo a mi ritmo), sumado a todas las horas dedicadas, paralelamente, tanto al estudio como a la práctica por mi cuenta realizando otros cursos, proyectos, practicando, leyendo libros, etc., creo que estoy ya en condiciones de aspirar a mi primer empleo como junior, y ese es ahora mi mayor deseo.</p>
+            </div>
+            <a class="btn" id="toggleButtonAbout" onclick="toggleContentAbout()">Leer más sobre mí</a>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <h2 class="heading">Formación</h2>
+
+        <div class="service-container">
+
+            <div class="services-box">
+                <i class='bx bx-code-block'></i>
+                <h3>Desarrollo web</h3>
+                <p>Mi aprendizaje sobre desarrollo web comenzó con el curso <a href="https://www.domestika.org/es/courses/74-introduccion-al-desarrollo-web-responsive-con-html-y-css/course">"Introducción al Desarrollo Web Responsive con HTML y CSS"</a> de Javier Usobiaga Ferrer.</p>
+                <p>A partir de ahí, empecé a estudiar diferentes cursos, tutoriales, proyectos y recursos, hasta matricularme en el ciclo superior de <a href="https://www.todofp.es/que-estudiar/loe/informatica-comunicaciones/des-aplicaciones-web.html">"Desarrollo de Aplicaciones Web (DAW)"</a>.</p>
+                <p>A su vez, realicé el curso de 'Responsive Web Design Certification' de <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">freeCodeCamp</a>.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-curly'></i>
+                <h3>Programación</h3>
+                <p>Mi interés y pasión por la programación vino después de mi interés por el desarrollo web, pero a día de hoy me gusta tanto o más.</p>
+                <p>Los lenguajes de programación que más he estudiado son JavaScript y Java, y en menor medida Python.</p>
+                <p>Además de estudiar programación en DAW, estoy estudiando "JavaScript Algorithms and Data Structures Certification" en <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/">freeCodeCamp</a>.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-data' ></i>
+                <h3>Bases de Datos</h3>
+                <p>Cuando me tocó estudiar el módulo de Bases de Datos en DAW, pensaba que no me iba a gustar demasiado, pero lo cierto es que me acabó gustando y no se me da nada mal.</p>
+                <p>Antes de estudiar el módulo de Bases de Datos en DAW, para tener una base, estudié el curso <a href="https://www.coursera.org/learn/introduction-to-databases-es?utm_medium=sem&utm_source=gg&utm_campaign=B2C_EMEA__coursera_FTCOF_career-academy_pmax-multiple-audiences-country-multi-set2&campaignid=20882109092&adgroupid=&device=c&keyword=&matchtype=&network=x&devicemodel=&adposition=&creativeid=&hide_mobile_promo&gad_source=1&gclid=CjwKCAjwx-CyBhAqEiwAeOcTdf-g0uLae-7LNrJoZqKyJJv6gslhRayWCgfC0-26jHxQIVvSBgA4kBoCVZEQAvD_BwE">"Introducción a las Bases de Datos"</a> de Meta.</p>
+                <p>Los Sistemas Gestores de Bases de Datos con los que he aprendido son MySQL y SQLServer</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Proyectos</h2>
+
+        <div class="projects-container">
+
+            <div class="projects-box">
+                <img src="assets/CanaryNews.JPG" alt="">
+                <div class="projects-info">
+                    <h4>Canary News</h4>
+                    <p>Sitio web con un diseño 'Holy Grail'.</p>
+                    <a href="#">
+                        <i class="bx bx-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="assets/Escapadas.JPG" alt="">
+                <div class="projects-info">
+                    <h4>Escapadas</h4>
+                    <p>Sitio web con un diseño 'Multi-column'.</p>
+                    <a href="#">
+                        <i class="bx bx-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="assets/CanaryFashion.JPG" alt="">
+                <div class="projects-info">
+                    <h4>Canary Fashion</h4>
+                    <p>Sitio web con un diseño 'Masonry'.</p>
+                    <a href="#">
+                        <i class="bx bx-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="assets/AmazingTech.JPG" alt="">
+                <div class="projects-info">
+                    <h4>Amazing Tech</h4>
+                    <p>Sitio web con un diseño 'Masonry'.</p>
+                    <a href="#">
+                        <i class="bx bx-link"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="assets/todoapp.JPG" alt="">
+                <div class="projects-info">
+                    <h4>To Do App</h4>
+                    <p>'To Do App' con React'.</p>
+                    <a href="#">
+                        <i class="bx bx-link"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Skills</h2>
+
+        <div class="skill-bars">
+
+            <div class="bar">
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>JavaScript</span>
+                </div>
+                <div class="progress-line javascript">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>React</span>
+                </div>
+                <div class="progress-line react">
+                    <span></span>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="info">
+                    <span>SQL</span>
+                </div>
+                <div class="progress-line sql">
+                    <span></span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+
+            <div class="input-box">
+                <input type="text" name="" id="" placeholder="Nombre y apellidos">
+                <input type="email" name="" id="" placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <input type="numer" name="" id="" placeholder="Número de teléfono">
+                <input type="text" name="" id="" placeholder="Asunto">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+            <input type="submit" value="Enviar mensaje" class="btn">
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="social">
+            <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-facebook-square' ></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            © David Delgado | All Rights Reserved             
+        </p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
