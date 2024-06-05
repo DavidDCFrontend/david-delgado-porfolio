@@ -663,7 +663,7 @@ section {
 
 @media only screen and (max-width: 600px) {
     .home__content h3:nth-of-type(2) {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .heading {
         font-size: 6rem;
