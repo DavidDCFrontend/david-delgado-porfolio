@@ -485,6 +485,14 @@ section {
     width: 80%;
     background-color: blue;
 }
+.bar .progress-line.java span {
+    width: 35%;
+    background-color: peru;
+}
+.bar .progress-line.spring span {
+    width: 25%;
+    background-color: rebeccapurple;
+}
 
 /* CONTACT */
 .contact {
