@@ -469,8 +469,10 @@ section {
     width: 60%;
     background-color: gold;
 }
-.bar .progress-line.react span {
-    width: 30%;
+.bar .progress-line.react span,
+.bar .progress-line.git span,
+.bar .progress-line.github span {
+    width: 40%;
     background-color: rgb(58,58,255);
 }
 .bar .progress-line.sql span {
@@ -489,8 +491,10 @@ section {
     width: 35%;
     background-color: peru;
 }
-.bar .progress-line.spring span {
-    width: 25%;
+.bar .progress-line.spring span,
+.bar .progress-line.php span,
+.bar .progress-line.laravel span {
+    width: 30%;
     background-color: rebeccapurple;
 }
 
