@@ -185,11 +185,11 @@ section {
     }
     21%,
     40%{
-        content: 'Programador';
+        content: 'Programador Full Stack';
     }
     41%,
     60% {
-        content: 'Administrador de BBDD';
+        content: 'Programador Java';
     }
     61%,
     80%{
@@ -197,7 +197,7 @@ section {
     }
     81%,
     100% {
-        content: 'Estudiante de DAW';
+        content: 'Programador Laravel';
     }
 }
 @keyframes typing {  /* Simular la escritura gradual del texto alternando el ancho */
